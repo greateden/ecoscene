@@ -28,8 +28,6 @@
 
 
   <style type="text/css">
-
-
     /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2355,10 +2353,14 @@
 
  */
     /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+    /* quick 2 */
     html {
-      font-family: sans-serif;
+      font-family: Palatino;
       -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%
+      -webkit-text-size-adjust: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: "assets/background.webp";
     }
 
     body {
@@ -3219,7 +3221,6 @@
       flex-direction: row;
       position: relative;
       z-index: auto;
-      padding: 20px
     }
 
     .sb-section:first-of-type .sb-container:first-of-type {
@@ -3232,8 +3233,11 @@
       background-color: #fff
     }
 
+    /* quick 1 */
     .sb-section-opt-light:nth-of-type(2n+3) {
-      background-color: #eef1ef
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('assets/background.webp');
+      /* background-color: rgba(0, 0, 0, 0.0);
+      background-image: url("assets/background.webp"); */
     }
 
     .sb-section-opt-light.option-section-background-contrast-none {
@@ -4334,7 +4338,8 @@
     .sb-section-opt-light .sb-button--form:visited {
       color: #fff;
       border-color: #32aa27;
-      background-color: #32aa27
+      background-color: #32aa27;
+      border-radius: 10px;
     }
 
     .sb-section-opt-light .sb-button--form svg,
@@ -4348,7 +4353,8 @@
     .sb-section-opt-light .sb-button--form:visited:hover {
       color: #fff;
       border-color: #26801d;
-      background-color: #26801d
+      background-color: #26801d;
+      border-radius: 10px;
     }
 
     .sb-section-opt-light .sb-button--form:hover svg,
@@ -5203,7 +5209,7 @@
     }
 
     .sb-section-opt-light .form__label {
-      color: #020402
+      color: #fff
     }
 
     .sb-section-opt-dark .form__label {
@@ -5283,7 +5289,9 @@
     .sb-section-opt-light .form__input {
       background-color: #fff;
       color: #020402;
-      border-color: #6e6b6b
+      border-color: #6e6b6b;
+      border-radius: 10px;
+
     }
 
     .sb-section-opt-dark .form__input {
@@ -9000,7 +9008,7 @@
     }
 
     .sb-section-opt-light .sb-section-subtitle {
-      color: #020402
+      color: #fff
     }
 
     .sb-section-opt-dark .sb-section-subtitle {
@@ -9053,7 +9061,7 @@
     }
 
     .sb-section-opt-light .sb-section-title {
-      color: #32aa27
+      color: #79ed6f
     }
 
     .sb-section-opt-dark .sb-section-title {
@@ -9230,7 +9238,8 @@
       padding: 40px;
       background: #f5f5f5;
       display: flex;
-      flex-direction: column
+      flex-direction: column;
+      border-radius: 10px;
     }
 
     .sb-section-opt-light .contact-full__location {
@@ -12199,7 +12208,8 @@
                       data-sb-is-link="true" data-sb-type="" data-sb-uuid="a7085fdb-8b91-4af1-a133-e23759b5a1b0">
                       <a class=" sb-link sb-button sb-button--nav " data-component-field="navigationLink"
                         data-sb-field="" data-sb-is-link="true" data-sb-type=""
-                        data-sb-uuid="a7085fdb-8b91-4af1-a133-e23759b5a1b0" href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#contact" target="">
+                        data-sb-uuid="a7085fdb-8b91-4af1-a133-e23759b5a1b0"
+                        href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#contact" target="">
                         Contact
                       </a>
 
@@ -12703,8 +12713,9 @@
                   <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="50" data-aos-duration="400"
                     data-aos-easing="ease-in-out" data-aos-once="true" class="sb-subtitle sb-hero__subtitle"
                     data-component-field="subtitle" data-sb-field="text" data-sb-is-link="" data-sb-type="text"
-                    data-sb-uuid="04e4abc6-6d9e-49f7-b8b3-116cc646c9c4">Digital Twin of River Systems for Waterway
-                    Guardians</div>
+                    data-sb-uuid="04e4abc6-6d9e-49f7-b8b3-116cc646c9c4">Empowering the guardianship of our rivers
+                    through AI-driven insights, blending traditional iwi wisdom with cutting-edge technology to protect
+                    and sustain the lifeblood of Aotearoa’s ecosystems.</div>
                   <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="100" data-aos-duration="400"
                     data-aos-easing="ease-in-out" data-aos-once="true" class="sb-hero__paragraph"
                     data-component-field="paragraph" data-sb-field="text" data-sb-is-link="" data-sb-type="rich-text"
@@ -12722,7 +12733,8 @@
                     data-sb-is-link="true" data-sb-type="" data-sb-uuid="">
                     <a class="sb-cta-wrapper__btn sb-button sb-button--primary" data-component-field="linkRaw"
                       data-sb-field="" data-sb-is-link="true" data-sb-type=""
-                      data-sb-uuid="fc4b71f7-8723-4d64-ae8c-06b9bab2599c" href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#services" rel=" " target="">View
+                      data-sb-uuid="fc4b71f7-8723-4d64-ae8c-06b9bab2599c"
+                      href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#services" rel=" " target="">View
                       services</a>
                   </span>
 
@@ -12830,8 +12842,9 @@
                         data-sb-is-link="true" data-sb-type="" data-sb-uuid="">
                         <a class="sb-cta-wrapper__btn sb-button sb-button--secondary" data-component-field="linkRaw"
                           data-sb-field="" data-sb-is-link="true" data-sb-type=""
-                          data-sb-uuid="17ba746b-3c19-42ab-8d14-b451fca3a020" href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#contact" rel=" "
-                          target="">Get in touch</a>
+                          data-sb-uuid="17ba746b-3c19-42ab-8d14-b451fca3a020"
+                          href="/EcoSense_ AI-Powered Waterway Guardians _ Home.html#contact" rel=" " target="">Get in
+                          touch</a>
                       </span>
 
 
@@ -13018,8 +13031,7 @@
                     data-aos-easing="ease-in-out" data-aos-once="true" class="items-grid__item" skip-data-sb="">
 
                     <a aria-label="Read more" class="items-grid__item-body" data-sb-is-link="true"
-                      data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/predictive-analysis" rel=" "
-                      target="">
+                      data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/predictive-analysis" rel=" " target="">
 
                       <div class="items-grid__item-image" skip-data-sb="">
                         <figure class="option-image lazy" data-bg="url('assets/predictive-analytics.webp')"
@@ -13190,7 +13202,7 @@
                       data-sb-uuid="a723d0b7-fe82-4536-a2e3-66bc94300cd8" href="/submit-data/submit.html" rel=" "
                       target="">
 
-                     
+
 
                       <div class="items-grid__item-content" skip-data-sb="">
 
@@ -13211,7 +13223,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Submit your local freshwater data for the future of Aotearoa.</div>
+                        <div class="items-grid__description" skip-data-sb="">Submit your local freshwater data for the
+                          future of Aotearoa.</div>
 
                       </div>
                     </a>
@@ -13224,7 +13237,7 @@
                       data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/testkits/testkits.html" rel=" "
                       target="">
 
-                      
+
                       <div class="items-grid__item-content" skip-data-sb="">
 
                         <div class="items-grid__header h3" skip-data-sb="">
@@ -13244,7 +13257,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Receive a free kit to test your local freshwater sources.</div>
+                        <div class="items-grid__description" skip-data-sb="">Receive a free kit to test your local
+                          freshwater sources.</div>
 
                       </div>
                     </a>
@@ -13254,10 +13268,9 @@
                     data-aos-easing="ease-in-out" data-aos-once="true" class="items-grid__item" skip-data-sb="">
 
                     <a aria-label="Read more" class="items-grid__item-body" data-sb-is-link="true"
-                      data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/iwi/iwi.html" rel=" "
-                      target="">
+                      data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/iwi/iwi.html" rel=" " target="">
 
-                      
+
                       <div class="items-grid__item-content" skip-data-sb="">
 
                         <div class="items-grid__header h3" skip-data-sb="">
@@ -13277,7 +13290,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Resources and services available for our whānau and iwi</div>
+                        <div class="items-grid__description" skip-data-sb="">Resources and services available for our
+                          whānau and iwi</div>
 
                       </div>
                     </a>
@@ -13290,7 +13304,7 @@
                       data-sb-uuid="bdbde825-a249-44c0-9946-466d042ca343" href="/request-data/request.html" rel=" "
                       target="">
 
-                      
+
 
                       <div class="items-grid__item-content" skip-data-sb="">
 
@@ -13311,7 +13325,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Explore our options for obtaining high-quality freshwater biodiversity and river data.</div>
+                        <div class="items-grid__description" skip-data-sb="">Explore our options for obtaining
+                          high-quality freshwater biodiversity and river data.</div>
 
                       </div>
                     </a>
@@ -13324,7 +13339,7 @@
                       data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/community/community.html" rel=" "
                       target="">
 
-                      
+
                       <div class="items-grid__item-content" skip-data-sb="">
 
                         <div class="items-grid__header h3" skip-data-sb="">
@@ -13344,7 +13359,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Check out what we and the Aotearoa whānau are doing for the taiao.</div>
+                        <div class="items-grid__description" skip-data-sb="">Check out what we and the Aotearoa whānau
+                          are doing for the taiao.</div>
 
                       </div>
                     </a>
@@ -13357,7 +13373,7 @@
                       data-sb-uuid="ba7e9332-87f8-4df8-854a-87c62f6b67f9" href="/community/community.html" rel=" "
                       target="">
 
-                      
+
                       <div class="items-grid__item-content" skip-data-sb="">
 
                         <div class="items-grid__header h3" skip-data-sb="">
@@ -13377,7 +13393,8 @@
 
 
 
-                        <div class="items-grid__description" skip-data-sb="">Utilize our AI-powered freshwater fish and taonga species identification service.</div>
+                        <div class="items-grid__description" skip-data-sb="">Utilize our AI-powered freshwater fish and
+                          taonga species identification service.</div>
 
                       </div>
                     </a>
@@ -13916,23 +13933,7 @@
 
 
                 </div>
-                <div class="by-b12">
-                  <a href="https://www.b12.io/ai-web-design/?utm_source=client&amp;utm_medium=footer&amp;utm_campaign=ai-web-design"
-                    rel="noopener noreferrer" target="_blank">Web design by <svg id="b12-logo" viewBox="0 0 179.8 79.2"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <title>B12</title>
-                      <path
-                        d="M53.9,46a12.87,12.87,0,0,0-4.6-2.9c-2.5-.8-3.2-.9-10.1-.9H28.3V69.5h10c9.2,0,10.5-.2,13.8-2.2s5.4-6.4,5.4-11.3c0-4.2-1.3-7.7-3.6-10M51.6,11.4A9.44,9.44,0,0,0,47.1,9c-2.3-.6-3.5-.6-10-.6H28.2V33.2h11c4.4,0,8-.6,10.2-1.6,3.5-1.5,5.8-5.8,5.8-10.7a12.37,12.37,0,0,0-3.6-9.5M71.8,68.5a16,16,0,0,1-6.1,6.3,19.75,19.75,0,0,1-9,2.8c-1.6.1-4.5.1-8.6.1H0V69.3H6.4a9.59,9.59,0,0,0,4-.5,3.35,3.35,0,0,0,1.5-1.6,5.59,5.59,0,0,0,.7-2.6c0-.6.1-1.6.1-3.3v-45c0-1.5-.1-2.7-.1-3.3a5.36,5.36,0,0,0-.7-2.6c-.7-1.6-2.1-2.1-5.5-2.1H0V0H36.6c3.9,0,6.9.1,9,.1C54,.3,60,2,65.1,5.6A17,17,0,0,1,72.3,20a16.15,16.15,0,0,1-5.4,12.6c-2.8,2.6-4.8,3.6-10.1,5.1,5.4,1.4,6.9,2,10,4,4.9,3,7.8,9,7.8,15.8a23,23,0,0,1-2.8,11">
-                      </path>
-                      <path
-                        d="M78.5,77.7V69.3h7a12,12,0,0,0,3.9-.4,3.71,3.71,0,0,0,1.4-1.6,5.53,5.53,0,0,0,.7-2.5c0-.6.1-1.6.1-3V29.2H78.5V21.7c10.7-.1,14.1-2.2,16.8-10.4h10V58.5l.1,3.3a19.58,19.58,0,0,0,.1,3,5.73,5.73,0,0,0,.6,2.5c.8,1.6,2,2,5.4,2H118v8.4Z">
-                      </path>
-                      <path
-                        d="M179.2,64.3c-1.4,9.8-7.4,14.9-17.1,14.9-5.5,0-9.9-1.4-20.3-6.5-3-1.4-4.7-2-6.2-2-3.2,0-5.1,1.9-5.1,5.3v1.6h-7.7c-.1-1.1-.1-2-.1-2.6a33.4,33.4,0,0,1,2.1-11.4c2.5-6.5,6.8-10.6,16.3-15.2q6.45-3.15,9-4.5a24.88,24.88,0,0,0,6.4-4.6,13.54,13.54,0,0,0,3.9-9.2c0-7.7-5.6-12.5-14.6-12.5-7.8,0-12.2,2.8-14,8.9a9,9,0,0,1,4.2-1.1c4.3,0,7.4,3.3,7.4,7.9,0,5.3-3.5,8.8-8.8,8.8-6.5,0-10.8-4.8-10.8-12a19.15,19.15,0,0,1,6.9-14.5c4.9-4.2,10.8-6.1,19.4-6.1,15.9,0,26.7,8.8,26.7,21.9,0,10.9-6.2,17-21,20.9C142,56,140.6,56.5,136,60.4c-2.3,1.9-3.2,3.2-4.2,6.6,3.4-2.8,5.8-3.7,10.5-3.7a27.28,27.28,0,0,1,4.1.3l9.7,1.6a46.32,46.32,0,0,0,6.2.6c7.5,0,10.7-3.3,10.8-11.7H180a100.9,100.9,0,0,1-.8,10.2">
-                      </path>
-                    </svg>
-                  </a>
-                </div>
+
               </div>
 
 
