@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <meta content="origin-when-cross-origin" name="referrer">
+    <base href="/">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>EcoSense: Submit Data</title>
+    <meta name="title" content="EcoSense: Submit Data">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #32aa27;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        span {
+            padding-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #32aa27;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #467242;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Submit Your Data</h1>
+        <p>We value the data you collect. Please fill out the form below to submit your sensor data. This information
+            will help us improve water quality predictions and support local communities in managing water resources
+            effectively.</p>
+
+        <form id="submit-data-form">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="description">Optional. </br>Enter your email if you wish to receive a copy of the data you
+                submitted. This submission is anonymous regardless.</span>
+
+            <label for="ph">pH Level:</label>
+            <input type="number" id="ph" name="ph" step="0.01" required>
+            <span class="description">Enter the pH level of the water sample (e.g., 7.00 for neutral).</span>
+
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <option value="north">Northland</option>
+                <option value="south">Waikato</option>
+                <option value="east">Otago</option>
+                <option value="west">Southland</option>
+                <option value="central">Central Otago</option>
+            </select>
+            <span class="description">Select Your Region</span>
+
+            <label for="site-location">Site Location:</label>
+            <select id="site-location" name="site-location" required>
+                <option value="river">Clutha</option>
+                <option value="lake">Manuherikia</option>
+                <option value="reservoir">Shag</option>
+                <option value="wetland">Taieri</option>
+                <option value="other">Tokomairiro</option>
+            </select>
+            <span class="description">Choose the nearest site of the test location</span>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" name="image-upload" accept="image/*" required>
+
+            <button type="submit">Submit Data</button>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#submit-data-form').on('submit', function (e) {
+                e.preventDefault();
+                alert('Data submitted successfully!');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
