@@ -10,51 +10,49 @@
 
 <body>
     <header class="hero">
-        <h1>EcoSense - Safeguarding Waterways with Cutting-Edge AI</h1>
+        <div class="hero-content">
+            <h1>EcoSense - Safeguarding Waterways with Cutting-Edge AI</h1>
+            <a href="#" class="cta-button">Discover more</a>
+        </div>
     </header>
     
-    <section class="content">
-        <div class="card">
-            <h2>Our Mission</h2>
-            <p>EcoSense is committed to safeguarding waterways with cutting-edge AI, using predictive models and machine learning data analysis for high quality data collection for our Iwi and Aotearoa.
-                </p>
-
-        </div>
-        <div class="card">
-            <h2>Key Benefits</h2>
-            <ul>
-                <li><strong>Cost-effective Compliance:</strong> Reduce compliance burdens with simplified reporting and
-                    real-time insights.</li>
-                <li><strong>Empowered Farmers:</strong> Enhance productivity while protecting water resources.</li>
-                <li><strong>Community Engagement:</strong> Foster collaboration among stakeholders with comprehensive,
-                    culturally-informed data.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Our Solutions</h2>
-            <p><strong>Real-Time Monitoring:</strong> Track water quality metrics instantly, allowing for rapid response
-                to potential issues.</p>
-            <p><strong>Predictive Analytics:</strong> Use AI-driven models to forecast water quality trends, helping to
-                plan proactively.</p>
-            <p><strong>Collaborative Platform:</strong> Bring together stakeholders on a single platform for shared
-                insights and coordinated action.</p>
+    <section class="trending-topics">
+        <h2>Trending topics</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <img src="/assets/water.webp" alt="Water for Women">
+                <div class="topic-info">
+                    <h3>Social Issues</h3>
+                    <p>Water for Women: Lending a hand in Rural Regions</p>
+                </div>
+            </div>
+            <div class="topic-card">
+                <img src="/assets/school.jpg" alt="River Testing for Schools">
+                <div class="topic-info">
+                    <h3>Schools</h3>
+                    <p>How schools are contributing to the future of freshwater usage</p>
+                </div>
+            </div>
+            <div class="topic-card">
+                <img src="/assets/green.jpg" alt="Going for Green">
+                <div class="topic-info">
+                    <h3>Digital</h3>
+                    <p>Going for green: Freshwater improvements for fruit orchards</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="content">
-        <div class="card">
-            <h2>Empowering Farmers</h2>
-            <p>EcoSense offers farmers AI-powered tools to monitor their impact, reduce environmental risks, and
-                contribute to the national effort to restore New Zealand’s waterways.</p>
-        </div>
-        <div class="card">
-            <h2>Our Vision</h2>
-            <p>We believe in a future where technology and tradition come together to preserve New Zealand’s natural
-                heritage, combining AI with indigenous knowledge and modern farming techniques.</p>
-        </div>
-        <div class="card">
-            <h2>Investor Appeal</h2>
-            <p>EcoSense is an investment in the future of New Zealand’s environment, offering scalable, AI-driven
-                solutions that deliver measurable social and financial returns.</p>
+
+    <section class="trending-topics">
+        <h2>Events</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <img src="/assets/testing.jpg" alt="Water for Women">
+                <div class="topic-info">
+                    <h3>Clutha Testing Otago Uni</h3>
+                    <p>Together with the University of Otago, come join us in learning how to test using our TestKits!</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -80,7 +78,7 @@
         background-image: url('/assets/compic.webp');
         background-size: cover;
         background-position: center;
-        height: 300px;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,6 +95,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
         /* Optional: Dark overlay for better text visibility */
     }
 
@@ -107,7 +106,83 @@
         padding: 0 20px;
     }
 
+    .hero-content {
+    position: relative;
+    z-index: 2;
+}
 
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.trending-topics {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.trending-topics h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.topics-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topic-card {
+    background-color: white;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.topic-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.topic-info h3 {
+    margin: 0;
+    color: #004d40;
+    font-size: 1.2em;
+}
+
+.topic-info p {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 1em;
+}
 
     .content {
         display: flex;
