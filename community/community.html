@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSense - Safeguarding Waterways</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>EcoSense - Safeguarding Waterways with Cutting-Edge AI</h1>
+            <a href="#" class="cta-button">Discover more</a>
+        </div>
+    </header>
+    
+    <section class="trending-topics">
+        <h2>Trending topics</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <img src="/assets/water.webp" alt="Water for Women">
+                <div class="topic-info">
+                    <h3>Social Issues</h3>
+                    <p>Water for Women: Lending a hand in Rural Regions</p>
+                </div>
+            </div>
+            <div class="topic-card">
+                <img src="/assets/school.jpg" alt="River Testing for Schools">
+                <div class="topic-info">
+                    <h3>Schools</h3>
+                    <p>How schools are contributing to the future of freshwater usage</p>
+                </div>
+            </div>
+            <div class="topic-card">
+                <img src="/assets/green.jpg" alt="Going for Green">
+                <div class="topic-info">
+                    <h3>Digital</h3>
+                    <p>Going for green: Freshwater improvements for fruit orchards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-topics">
+        <h2>Events</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <img src="/assets/testing.jpg" alt="Water for Women">
+                <div class="topic-info">
+                    <h3>Clutha Testing Otago Uni</h3>
+                    <p>Together with the University of Otago, come join us in learning how to test using our TestKits!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contact us to learn how you can be part of the solution.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    header.hero {
+        background-image: url('/assets/compic.webp');
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    header.hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        /* Optional: Dark overlay for better text visibility */
+    }
+
+    header.hero h1 {
+        z-index: 1;
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.trending-topics {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.trending-topics h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.topics-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topic-card {
+    background-color: white;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.topic-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.topic-info h3 {
+    margin: 0;
+    color: #004d40;
+    font-size: 1.2em;
+}
+
+.topic-info p {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 1em;
+}
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .card {
+        background-color: white;
+        width: 80%;
+        max-width: 800px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .card h2 {
+        margin-top: 0;
+        color: #004d40;
+    }
+
+    .card p,
+    .card ul {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+
+    .card ul {
+        padding-left: 20px;
+    }
+
+    .card li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #004d40;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+</style>
