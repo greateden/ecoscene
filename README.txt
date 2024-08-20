@@ -1,4 +1,4 @@
-https://ecosense-ai-powered-waterway-guardians.b12sites.com/index
+https://ecosense-ai-powered-waterway-guardians.b12sites.com/EcoSense_ AI-Powered Waterway Guardians _ Home.html
 
 
 To create some marketing and investor-attractive content for your EcoSense website, let's focus on a few key areas from your planning document. We want to ensure that the language is both compelling and credible, appealing to potential investors, government bodies, and farmers. Here's a revised version of the content:
